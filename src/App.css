@@ -1,0 +1,144 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #444;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    max-width: 80%;
+    margin: 0px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th {
+    padding: 10px;
+    text-align: left;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.has-text-success {
+    color: #00C853;
+}
+
+.has-text-danger {
+    color: #FF1744;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.tab-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th {
+    padding: 10px;
+    text-align: left;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.has-text-success {
+    color: #00C853;
+}
+
+.has-text-danger {
+    color: #FF1744;
+}
+
+.nav-tabs>li {
+    font-size: 17px;
+}
+#logo{
+    width: 60px;
+    position: absolute;
+    top: 25px;
+    left: 20%;
+}
+.title{
+    margin: 35px;
+}

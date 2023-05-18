@@ -1,0 +1,18 @@
+Start Zookeeper
+sudo /opt/zookeeper-3.7.1/bin/zkServer.sh start
+
+Start Kafka and create a Topic
+/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
+/opt/homebrew/opt/kafka/bin/kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic Transaction
+
+Verify by creating a producer consumer pair
+/opt/homebrew/opt/kafka/bin/kafka-console-producer --broker-list localhost:9092 --topic test
+/opt/homebrew/opt/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic test
+
+Start Mongodb
+brew services start mongodb-community@6.0
+
+python process_data.py // Start Data Processing unit
+python server.py // Start Backend server
+python data_source.py // Start Multiple instances of Data Source
+npm start  // Start Dashboard
